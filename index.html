@@ -1,9 +1,10 @@
-html_content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>The Scaler's Agency | Spécialiste YouTube Shorts Finance</title>
+    <!-- Favicone ajoutée -->
     <link rel="icon" type="image/png" href="TSA_Favicone.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -56,18 +57,20 @@ html_content = """<!DOCTYPE html>
         .dark .custom-scrollbar::-webkit-scrollbar-track { background: #121212; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #FF0000; border-radius: 10px; }
 
+        /* Animation Scroll Infini et Fluide */
         @keyframes scroll {
             0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+            100% { transform: translateX(-100%); }
         }
         .marquee-container {
+            display: flex;
             overflow: hidden;
-            white-space: nowrap;
             width: 100%;
         }
         .marquee-content {
-            display: inline-flex;
-            animation: scroll 20s linear infinite;
+            display: flex;
+            flex-shrink: 0;
+            animation: scroll 10s linear infinite; /* Vitesse doublée */
         }
     </style>
 </head>
@@ -75,9 +78,10 @@ html_content = """<!DOCTYPE html>
 
     <nav class="fixed w-full z-50 bg-white/90 dark:bg-black/90 backdrop-blur-md border-b border-gray-200 dark:border-white/10 shadow-sm transition-colors duration-300">
         <div class="flex justify-between items-center p-4 md:p-5 max-w-7xl mx-auto">
-            <a href="#" class="flex items-center">
-                <img src="TSA_logo.png" alt="The Scaler's Agency" class="h-8 md:h-10 object-contain">
-            </a>
+            <div class="text-2xl font-black tracking-tighter uppercase text-[#202124] dark:text-white flex items-center">
+                <!-- Logo Top Bar -->
+                <img src="TSA_logo.png" alt="TSA Logo" class="h-8 md:h-10 object-contain">
+            </div>
             
             <div class="hidden lg:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-600 dark:text-gray-300">
                 <a href="#stats" class="hover:text-[#FF0000] transition">Statistiques</a>
@@ -102,7 +106,8 @@ html_content = """<!DOCTYPE html>
         
         <div class="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div class="w-full md:w-1/2 text-center md:text-left">
-                                <p class="text-lg md:text-xl mb-10 text-black-600 dark:text-black-300 font-black leading-relaxed max-w-xl mx-auto md:mx-0">
+                <!-- Sous-titre corrigé -->
+                <p class="text-[11px] sm:text-xs md:text-sm mb-2 text-gray-600 dark:text-gray-300 font-black tracking-widest uppercase whitespace-nowrap max-w-xl mx-auto md:mx-0">
                     Approuvé par des Leaders de la Finance Française.
                 </p>
 
@@ -116,9 +121,27 @@ html_content = """<!DOCTYPE html>
                     Diviser votre coût d’acquisition avec des créatives YouTube short performantes.
                 </p>
                 
-                <div class="flex flex-col items-center md:items-start">
-                    <a href="https://calendly.com/lucapedonepro/30min" target="_blank" class="inline-block bg-[#FF0000] text-white px-8 py-4 rounded-lg font-black text-sm md:text-base hover:bg-red-700 transition shadow-lg tracking-widest uppercase mb-4">Demander un audit gratuit</a>
-                    <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">Architecture publicitaire sécurisée — 100% conforme aux réglementations financières</p>
+                <div class="flex flex-col items-center md:items-start w-full">
+                    <a href="https://calendly.com/lucapedonepro/30min" target="_blank" class="inline-block bg-[#FF0000] text-white px-8 py-4 rounded-lg font-black text-sm md:text-base hover:bg-red-700 transition shadow-lg tracking-widest uppercase mb-4 md:mb-0">Demander un audit gratuit</a>
+                    
+                    <!-- Logos Marquee Mobile Uni -->
+                    <div class="w-full mt-8 block md:hidden w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+                        <p class="text-center text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4">Délivré par des équipes qui ont travaillés avec :</p>
+                        <div class="marquee-container flex">
+                            <div class="marquee-content gap-12 items-center pr-12 opacity-70">
+                                <img src="BNP_PARIBAS_logo.png" alt="BNP Paribas" class="h-8 object-contain filter grayscale dark:brightness-0 dark:invert">
+                                <img src="GROUPE_BPCE_logo.png" alt="Groupe BPCE" class="h-8 object-contain filter grayscale dark:brightness-0 dark:invert">
+                                <img src="NATIXIS_logo.png" alt="Natixis" class="h-8 object-contain filter grayscale dark:brightness-0 dark:invert">
+                                <img src="Sage_logo.png" alt="Sage" class="h-8 object-contain filter grayscale dark:brightness-0 dark:invert">
+                            </div>
+                            <div class="marquee-content gap-12 items-center pr-12 opacity-70" aria-hidden="true">
+                                <img src="BNP_PARIBAS_logo.png" alt="BNP Paribas" class="h-8 object-contain filter grayscale dark:brightness-0 dark:invert">
+                                <img src="GROUPE_BPCE_logo.png" alt="Groupe BPCE" class="h-8 object-contain filter grayscale dark:brightness-0 dark:invert">
+                                <img src="NATIXIS_logo.png" alt="Natixis" class="h-8 object-contain filter grayscale dark:brightness-0 dark:invert">
+                                <img src="Sage_logo.png" alt="Sage" class="h-8 object-contain filter grayscale dark:brightness-0 dark:invert">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -141,20 +164,23 @@ html_content = """<!DOCTYPE html>
         </div>
     </header>
 
-    <section class="py-10 bg-white dark:bg-[#121212] border-y border-gray-200 dark:border-white/10 shadow-sm relative z-20 transition-colors duration-300">
+    <!-- Logos Marquee Desktop -->
+    <section class="hidden md:block py-10 bg-white dark:bg-[#121212] border-y border-gray-200 dark:border-white/10 shadow-sm relative z-20 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-6">
             <p class="text-center text-xs font-bold text-gray-500 uppercase tracking-widest mb-8">Délivré par des équipes qui ont travaillés avec les plus grosses marques de finances</p>
             <div class="marquee-container flex">
-                <div class="marquee-content gap-16 md:gap-32 items-center w-max opacity-70">
-                    <img src="BNP_PARIBAS_logo.png" alt="BNP Paribas" class="h-10 md:h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
-                    <img src="GROUPE_BPCE_logo.png" alt="Groupe BPCE" class="h-10 md:h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
-                    <img src="NATIXIS_logo.png" alt="Natixis" class="h-10 md:h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
-                    <img src="Sage_logo.png" alt="Sage" class="h-10 md:h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
-                    <!-- Doublon pour fluidité infinie -->
-                    <img src="BNP_PARIBAS_logo.png" alt="BNP Paribas" class="h-10 md:h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
-                    <img src="GROUPE_BPCE_logo.png" alt="Groupe BPCE" class="h-10 md:h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
-                    <img src="NATIXIS_logo.png" alt="Natixis" class="h-10 md:h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
-                    <img src="Sage_logo.png" alt="Sage" class="h-10 md:h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
+                <div class="marquee-content gap-32 items-center pr-32 opacity-70">
+                    <img src="BNP_PARIBAS_logo.png" alt="BNP Paribas" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
+                    <img src="GROUPE_BPCE_logo.png" alt="Groupe BPCE" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
+                    <img src="NATIXIS_logo.png" alt="Natixis" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
+                    <img src="Sage_logo.png" alt="Sage" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
+                </div>
+                <!-- Doublon pour fluidité infinie stricte -->
+                <div class="marquee-content gap-32 items-center pr-32 opacity-70" aria-hidden="true">
+                    <img src="BNP_PARIBAS_logo.png" alt="BNP Paribas" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
+                    <img src="GROUPE_BPCE_logo.png" alt="Groupe BPCE" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
+                    <img src="NATIXIS_logo.png" alt="Natixis" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
+                    <img src="Sage_logo.png" alt="Sage" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
                 </div>
             </div>
         </div>
@@ -213,6 +239,13 @@ html_content = """<!DOCTYPE html>
                     <h3 class="font-black uppercase text-xl mb-3 text-[#202124] dark:text-white">Scale Conforme</h3>
                     <p class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-relaxed">Même sans certification, nos frameworks créatifs performent massivement tout en respectant les règles de Google grâce à nos connaissances internes.</p>
                 </div>
+            </div>
+
+            <!-- Phrase de réassurance déplacée -->
+            <div class="mt-20 text-center">
+                <p class="text-sm md:text-base font-black text-[#202124] dark:text-white uppercase tracking-widest bg-gray-100 dark:bg-[#1e1e1e] inline-block px-6 py-4 rounded-lg border-2 border-[#202124] dark:border-white shadow-lg shadow-gray-200/50 dark:shadow-none">
+                    ARCHITECTURE PUBLICITAIRE SÉCURISÉE — 100% CONFORME AUX RÉGLEMENTATIONS FINANCIÈRES
+                </p>
             </div>
         </div>
     </section>
@@ -444,8 +477,10 @@ html_content = """<!DOCTYPE html>
         <canvas id="footer-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
         
         <div class="relative z-10 max-w-4xl mx-auto px-6">
-            <img src="TSA_logo.png" alt="The Scaler's Agency" class="h-16 md:h-20 object-contain mx-auto mb-8">
+            <!-- Logo ajouté au Footer -->
+            <img src="TSA_logo.png" alt="The Scaler's Agency" class="h-12 md:h-16 mx-auto mb-6 object-contain">
             <p class="text-[#FF0000] font-black tracking-widest uppercase mb-6 text-xs md:text-sm">Growth Partner for Finance Businesses</p>
+            
             <h2 class="text-5xl md:text-8xl font-black mb-8 uppercase tracking-tighter text-[#202124] dark:text-white">Demander un audit</h2>
             
             <p class="text-gray-600 dark:text-gray-400 font-medium mb-12 text-base md:text-xl">
@@ -476,10 +511,8 @@ html_content = """<!DOCTYPE html>
 
     <script>
         const gadsImg = new Image();
-        // SVG Google Ads Officiel
         gadsImg.src = 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg';
         const ytImg = new Image();
-        // SVG YouTube Officiel
         ytImg.src = 'https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg';
 
         class ParticleSystem {
@@ -611,9 +644,4 @@ html_content = """<!DOCTYPE html>
         });
     </script>
 </body>
-</html>"""
-
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-print("File generated")
+</html>
