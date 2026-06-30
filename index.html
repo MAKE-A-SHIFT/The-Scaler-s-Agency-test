@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>The Scaler's Agency | Spécialiste YouTube Shorts Finance</title>
-    <!-- Favicone ajoutée -->
     <link rel="icon" type="image/png" href="TSA_Favicone.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -30,7 +29,6 @@
             overflow-x: hidden;
         }
 
-        /* Material Design Shadows  Elements */
         .material-card {
             background-color: #ffffff;
             border-radius: 12px;
@@ -57,7 +55,6 @@
         .dark .custom-scrollbar::-webkit-scrollbar-track { background: #121212; }
         .custom-scrollbar::-webkit-scrollbar-thumb { background: #FF0000; border-radius: 10px; }
 
-        /* Animation Scroll Infini et Fluide */
         @keyframes scroll {
             0% { transform: translateX(0); }
             100% { transform: translateX(-100%); }
@@ -79,7 +76,6 @@
     <nav class="fixed w-full z-50 bg-white/90 dark:bg-black/90 backdrop-blur-md border-b border-gray-200 dark:border-white/10 shadow-sm transition-colors duration-300">
         <div class="flex justify-between items-center p-4 md:p-5 max-w-7xl mx-auto">
             <div class="text-2xl font-black tracking-tighter uppercase text-[#202124] dark:text-white flex items-center">
-                <!-- Logo Top Bar -->
                 <img src="TSA_logo.png" alt="TSA Logo" class="h-8 md:h-10 object-contain">
             </div>
             
@@ -104,27 +100,31 @@
     <header class="relative pt-32 pb-16 md:pt-48 md:pb-24 overflow-hidden bg-white dark:bg-[#121212] transition-colors duration-300">
         <canvas id="hero-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
         
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="" class="absolute top-1/3 left-4 md:left-12 w-12 md:w-20 opacity-20 -rotate-12 dark:opacity-30">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="" class="absolute top-1/4 right-4 md:right-1/3 w-16 md:w-24 opacity-20 rotate-12 dark:opacity-30">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/YouTube_Shorts_icon_%282020-2024%29.svg" alt="" class="absolute bottom-20 left-10 md:left-1/4 w-10 md:w-16 opacity-20 -rotate-6 dark:opacity-30">
+        </div>
+
         <div class="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
             <div class="w-full md:w-1/2 text-center md:text-left">
-                <!-- Sous-titre corrigé -->
-                <p class="text-[11px] sm:text-xs md:text-sm mb-2 text-gray-600 dark:text-gray-300 font-black tracking-widest uppercase whitespace-nowrap max-w-xl mx-auto md:mx-0">
+                <p class="text-[9px] sm:text-xs md:text-sm mb-2 text-gray-600 dark:text-gray-300 font-black tracking-widest uppercase whitespace-nowrap max-w-xl mx-auto md:mx-0">
                     Approuvé par des Leaders de la Finance Française.
                 </p>
 
                 <h1 class="text-4xl sm:text-5xl md:text-7xl font-black mb-6 leading-tight uppercase tracking-tighter">
                     <span class="text-[#FF0000] block">Youtube Short</span>
-                    <span class="text-[#202124] dark:text-white block mt-1 whitespace-nowrap">Paid Media & Creative</span>
+                    <span class="text-[#202124] dark:text-white block mt-1 sm:whitespace-nowrap">Paid Media & Creative</span>
                     <span class="font-serif text-3xl sm:text-4xl md:text-6xl text-[#202124] dark:text-white normal-case tracking-normal block mt-2 md:mt-4"> Pour les Services Financiers</span>
                 </h1>
                 
-                <p class="text-lg md:text-xl mb-10 text-gray-600 dark:text-gray-300 font-medium leading-relaxed max-w-xl mx-auto md:mx-0">
-                    Diviser votre coût d’acquisition avec des créatives YouTube short performantes.
+                <p class="text-base md:text-xl mb-10 text-gray-600 dark:text-gray-300 font-medium leading-relaxed max-w-xl mx-auto md:mx-0">
+                    Divisez votre coût d’acquisition avec des créatives YouTube short performantes.
                 </p>
                 
                 <div class="flex flex-col items-center md:items-start w-full">
                     <a href="https://calendly.com/lucapedonepro/30min" target="_blank" class="inline-block bg-[#FF0000] text-white px-8 py-4 rounded-lg font-black text-sm md:text-base hover:bg-red-700 transition shadow-lg tracking-widest uppercase mb-4 md:mb-0">Demander un audit gratuit</a>
                     
-                    <!-- Logos Marquee Mobile Uni - Rendu responsive -->
                     <div class="w-full mt-8 block md:hidden -mx-6 w-[calc(100%+3rem)] overflow-hidden">
                         <p class="text-center text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-4">Délivré par des équipes qui ont travaillés avec :</p>
                         <div class="marquee-container flex">
@@ -145,7 +145,6 @@
                 </div>
             </div>
 
-            <!-- Fix Responsive sur la colonne de droite -->
             <div class="w-full md:w-1/2 relative flex justify-center items-center mt-12 md:mt-0 h-[350px] sm:h-[450px] md:min-h-[500px]">
                 <div class="relative w-40 sm:w-64 h-[280px] sm:h-[450px] bg-gray-100 dark:bg-zinc-800 border-4 border-white dark:border-zinc-700 shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-2xl overflow-hidden z-10 rotate-3">
                     <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-bold uppercase text-xs sm:text-sm tracking-widest">Aperçu Short 1</div>
@@ -165,7 +164,6 @@
         </div>
     </header>
 
-    <!-- Logos Marquee Desktop -->
     <section class="hidden md:block py-10 bg-white dark:bg-[#121212] border-y border-gray-200 dark:border-white/10 shadow-sm relative z-20 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-6">
             <p class="text-center text-xs font-bold text-gray-500 uppercase tracking-widest mb-8">Délivré par des équipes qui ont travaillés avec les leaders de la finances</p>
@@ -176,7 +174,6 @@
                     <img src="NATIXIS_logo.png" alt="Natixis" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
                     <img src="Sage_logo.png" alt="Sage" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
                 </div>
-                <!-- Doublon pour fluidité infinie stricte -->
                 <div class="marquee-content gap-32 items-center pr-32 opacity-70" aria-hidden="true">
                     <img src="BNP_PARIBAS_logo.png" alt="BNP Paribas" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
                     <img src="GROUPE_BPCE_logo.png" alt="Groupe BPCE" class="h-12 object-contain filter grayscale dark:brightness-0 dark:invert">
@@ -187,7 +184,6 @@
         </div>
     </section>
 
-    <!-- Section QUI SUIS-JE replacée ici -->
     <section class="py-24 md:py-32 bg-white dark:bg-[#121212] border-b border-gray-200 dark:border-white/10 transition-colors duration-300">
         <div class="max-w-4xl mx-auto px-6 text-center">
             
@@ -207,7 +203,7 @@
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="text-3xl md:text-5xl font-black mb-16 text-center uppercase tracking-tighter text-[#202124] dark:text-white">La Puissance de l'Écosystème</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="material-card p-8 md:p-10 border-t-4 border-[#4285F4]">
                     <div class="text-5xl md:text-6xl font-black text-[#4285F4] mb-4 tracking-tighter">2 MILLIARDS</div>
                     <p class="font-medium text-lg text-gray-700 dark:text-gray-300">D'utilisateurs connectés chaque mois sur la plateforme.</p>
@@ -224,6 +220,10 @@
                     <div class="text-3xl md:text-4xl font-black text-[#FF0000] mb-4 tracking-tighter uppercase"> Un canal d'éducation</div>
                     <p class="font-medium text-lg text-gray-700 dark:text-gray-300"> TikTok et Meta découvrent, Google recherche, YouTube éduque. Ne vous contentez pas de cibler ceux qui cherchent une solution : faites-leur prendre conscience d'un problème qu'ils ignoraient. Transformez le marché pour surfer sur un océan bleu. C'est ce qui fait toute la puissance de YouTube. </p>
                 </div>
+            </div>
+
+            <div class="mt-16 flex justify-center w-full">
+                <img src="BFMTV_News_YoutubeShorts.jpeg" alt="News BFMTV YouTube Shorts" class="rounded-xl shadow-2xl border border-gray-200 dark:border-zinc-800 max-w-full md:max-w-3xl object-cover hover:scale-[1.02] transition-transform duration-300">
             </div>
         </div>
     </section>
@@ -258,7 +258,6 @@
                 </div>
             </div>
 
-            <!-- Phrase de réassurance déplacée -->
             <div class="mt-20 text-center">
                 <p class="text-sm md:text-base font-black text-[#202124] dark:text-white uppercase tracking-widest bg-gray-100 dark:bg-[#1e1e1e] inline-block px-6 py-4 rounded-lg border-2 border-[#202124] dark:border-white shadow-lg shadow-gray-200/50 dark:shadow-none">
                     ARCHITECTURE PUBLICITAIRE SÉCURISÉE — 100% CONFORME AUX RÉGLEMENTATIONS FINANCIÈRES
@@ -478,8 +477,13 @@
     <footer class="relative py-24 md:py-32 bg-white dark:bg-[#121212] text-center border-t border-gray-200 dark:border-white/10 overflow-hidden transition-colors duration-300">
         <canvas id="footer-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
         
+        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="" class="absolute top-24 left-4 md:left-24 w-12 md:w-20 opacity-20 rotate-12 dark:opacity-30">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="" class="absolute top-1/3 right-4 md:right-24 w-16 md:w-24 opacity-20 -rotate-12 dark:opacity-30">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/YouTube_Shorts_icon_%282020-2024%29.svg" alt="" class="absolute bottom-32 left-10 md:left-1/3 w-10 md:w-16 opacity-20 rotate-6 dark:opacity-30">
+        </div>
+
         <div class="relative z-10 max-w-4xl mx-auto px-6">
-            <!-- Logo ajouté au Footer -->
             <img src="TSA_logo.png" alt="The Scaler's Agency" class="h-12 md:h-16 mx-auto mb-6 object-contain">
             <p class="text-[#FF0000] font-black tracking-widest uppercase mb-6 text-xs md:text-sm">Growth Partner for Finance Businesses</p>
             
@@ -512,11 +516,6 @@
     </footer>
 
     <script>
-        const gadsImg = new Image();
-        gadsImg.src = 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg';
-        const ytImg = new Image();
-        ytImg.src = 'https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg';
-
         class ParticleSystem {
             constructor(canvasId) {
                 this.canvas = document.getElementById(canvasId);
@@ -537,7 +536,10 @@
                 this.canvas.width = this.canvas.parentElement.offsetWidth * scale;
                 this.canvas.height = this.canvas.parentElement.offsetHeight * scale;
                 this.ctx.scale(scale, scale);
-                this.initParticles();
+                
+                if (this.particles.length === 0) {
+                    this.initParticles();
+                }
             }
 
             initParticles() {
@@ -549,26 +551,15 @@
             }
 
             createParticle() {
-                let p = {
+                return {
                     x: Math.random() * this.canvas.parentElement.offsetWidth,
                     y: Math.random() * this.canvas.parentElement.offsetHeight,
                     vx: (Math.random() - 0.5) * 0.4,
                     vy: (Math.random() - 0.5) * 0.4,
-                    angle: Math.random() * Math.PI * 2
+                    angle: Math.random() * Math.PI * 2,
+                    type: 'electron',
+                    size: Math.random() * 1.5 + 0.5
                 };
-                
-                let rand = Math.random();
-                if (rand > 0.99) { 
-                    p.type = 'yt';
-                    p.size = Math.random() * 20 + 35; 
-                } else if (rand > 0.98) { 
-                    p.type = 'gads';
-                    p.size = Math.random() * 20 + 35;
-                } else {
-                    p.type = 'electron';
-                    p.size = Math.random() * 1.5 + 0.5;
-                }
-                return p;
             }
 
             update(p) {
@@ -579,34 +570,21 @@
                 p.x += p.vx;
                 p.y += p.vy;
 
-                if (p.x < 0 || p.x > this.canvas.parentElement.offsetWidth) p.vx *= -1;
-                if (p.y < 0 || p.y > this.canvas.parentElement.offsetHeight) p.vy *= -1;
+                const w = this.canvas.parentElement.offsetWidth;
+                const h = this.canvas.parentElement.offsetHeight;
+
+                if (p.x < 0) { p.x = 0; p.vx *= -1; }
+                else if (p.x > w) { p.x = w; p.vx *= -1; }
+                
+                if (p.y < 0) { p.y = 0; p.vy *= -1; }
+                else if (p.y > h) { p.y = h; p.vy *= -1; }
             }
 
             draw(p) {
-                if (p.type === 'electron') {
-                    this.ctx.fillStyle = 'rgba(255, 0, 0, 0.4)'; 
-                    this.ctx.beginPath();
-                    this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-                    this.ctx.fill();
-                } else {
-                    let img = p.type === 'gads' ? gadsImg : ytImg;
-                    if (img.complete) {
-                        let ratio = img.width / img.height;
-                        let drawW = p.size;
-                        let drawH = p.size;
-                        
-                        if (ratio > 1) { 
-                            drawH = p.size / ratio; 
-                        } else { 
-                            drawW = p.size * ratio; 
-                        }
-
-                        this.ctx.globalAlpha = 0.5; 
-                        this.ctx.drawImage(img, p.x - drawW/2, p.y - drawH/2, drawW, drawH);
-                        this.ctx.globalAlpha = 1.0;
-                    }
-                }
+                this.ctx.fillStyle = 'rgba(255, 0, 0, 0.4)'; 
+                this.ctx.beginPath();
+                this.ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                this.ctx.fill();
             }
 
             drawLines() {
@@ -614,7 +592,6 @@
                     for (let j = i; j < this.particles.length; j++) {
                         let pi = this.particles[i];
                         let pj = this.particles[j];
-                        if (pi.type !== 'electron' || pj.type !== 'electron') continue;
                         
                         let dx = pi.x - pj.x;
                         let dy = pi.y - pj.y;
